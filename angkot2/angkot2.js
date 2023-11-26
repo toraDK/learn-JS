@@ -1,5 +1,5 @@
 var jmlAngkot = 10;
-var angkotBeroperasi = 6;
+var angkotBeroperasi = 8;
 var noAngkot = 1;
 
 while(noAngkot <= angkotBeroperasi){
@@ -7,6 +7,6 @@ while(noAngkot <= angkotBeroperasi){
 noAngkot++;
 }
 
-for(var noAngkot = 7; noAngkot <= jmlAngkot; noAngkot++){
+for(noAngkot = angkotBeroperasi + 1; noAngkot <= jmlAngkot; noAngkot++){
     console.log('Angkot No. ' + noAngkot + ' Sedang tidak beroperasi.');
 }
