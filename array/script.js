@@ -65,10 +65,24 @@ var arr = ['tora', 'digda', 'kristiawan', 'dody', 'fitri'];
 // angka.sort();
 // console.log(angka.join('-'));
 
-var angka = [1,2,20,3,4,40,8,5,6,7];
+// var angka = [1,2,20,3,4,40,8,5,6,7];
 
-console.log(angka.join('-'));
-angka.sort(function (a,b) {
-    return a-b;
-});
-console.log(angka.join('-'));
+// console.log(angka.join('-'));
+// angka.sort(function (a,b) {
+//     return a-b;
+// });
+// console.log(angka.join('-'));
+
+//9. find hanya bisa mencari 1 nilai
+var angka = [1,2,20,3,4,40,8,5,6,7];
+var angka2 = angka.find(function (x) {
+    return x > 5;
+})
+console.log(angka2);
+
+//10. filter bisa mencari banyak nilai
+// var angka = [1,2,20,3,4,40,8,5,6,7];
+var angka2 = angka.filter(function (x) {
+    return x > 5;
+})
+console.log(angka2.join('-'));
