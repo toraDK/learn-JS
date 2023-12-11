@@ -18,3 +18,21 @@ var tambahPenumpang = function (namapenumpang, penumpang) {
         }
     }
 }
+
+var hapusPenumpang = function(namapenumpang, penumpang) {
+    if (penumpang.length == 0) {
+        console.log('angkot masih kosong');
+        return penumpang;
+    }else{
+        for (var i = 0; i < penumpang.length; i++) {
+            if (penumpang[i] == namapenumpang) {
+                penumpang[i] = undefined;
+                return penumpang;
+            }else if (i == penumpang.length - 1) {
+                console.log(namapenumpang + ' tidak ada di dalam angkot')
+                return penumpang;
+            }
+            
+        }
+    }
+}
