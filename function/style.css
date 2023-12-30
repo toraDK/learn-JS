@@ -12,6 +12,7 @@
                 .3s height .3s,
                 .3s margin-top .3s,
                 .1s background-color;
+    display: block;
 }
 
 .size {
@@ -20,6 +21,6 @@
     margin-top: 25px;
 }
 
-.caaption{
+.caption{
     background-color: black;
 }

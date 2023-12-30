@@ -92,21 +92,36 @@ const mhs1 = {
 // const tora = new mahasiswa();
 
 
-const mahasiswa = function (){
-    this.nama = 'tora';
-    this.umur = 18;
-    this.sayHello = function(){
-        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
+// const mahasiswa = function (){
+//     this.nama = 'tora';
+//     this.umur = 18;
+//     this.sayHello = function(){
+//         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
+//     }
+
+//     setInterval(() =>{
+//         console.log(this.umur++);
+//     }, 500);
+
+//     //hasil fungsi interval dibawah berbeda dengan fungsi interval di atas
+//     setInterval(function (){
+//         console.log(this.umur++);
+//     }, 500);
+// }
+
+// const tora = new mahasiswa();
+
+const box = document.querySelector('.box');
+box.addEventListener('click', function () {
+    let satu = 'size';
+    let dua = 'caption';
+
+    if(this.classList.contains(satu)){
+        [satu,dua] = [dua,satu];
     }
-
-    setInterval(() =>{
-        console.log(this.umur++);
-    }, 500);
-
-    //hasil fungsi interval dibawah berbeda dengan fungsi interval di atas
-    setInterval(function (){
-        console.log(this.umur++);
-    }, 500);
-}
-
-const tora = new mahasiswa();
+    
+    this.classList.toggle('satu');
+    setTimeout(() => {
+        this.classList.toggle('dua');
+    }, 600);
+});
