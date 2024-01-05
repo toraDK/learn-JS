@@ -1,0 +1,23 @@
+[
+    {
+        "nama": "Tora Digda Kristiawan",
+        "nim": "2341720161",
+        "email": "toradigda@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 1
+    },
+    {
+        "nama": "Dody",
+        "nim": "000000000",
+        "email": "Dody@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 2
+    },
+    {
+        "nama": "Erik",
+        "nim": "11111111",
+        "email": "Erikgmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 2
+    }
+]
